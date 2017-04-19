@@ -1,6 +1,6 @@
 # Tutpoint
 
-## Imagem do resultado:
+## Imagem do resultado
 
 ![Demo](http://img.imgur.com/j85PK1b.jpg)
 
