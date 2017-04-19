@@ -1,0 +1,41 @@
+.search{
+    text-align: center;
+}
+
+
+li {
+    list-style-type: none;
+    margin:2px;
+    clear:left;
+}
+
+li:nth-child(even){
+    background-color: antiquewhite;
+}
+
+li > .panel{
+    height:100px;
+    width:150px;
+    display: inline-block;
+}
+.panel>img{
+    height:100px;
+    text-align: center;
+}
+
+li > .txtcont{
+    height:100px;
+    position: relative;
+    display: inline-block;
+    min-width: 300px;
+}
+
+.txtcont > a{
+    font-size: 15pt;
+    font-family: 'Ubuntu', 'Calibri', sans-serif;
+    text-decoration: italic;
+    font-weight: bolder;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

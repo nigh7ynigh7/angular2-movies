@@ -1,3 +1,26 @@
-<h1>
-  {{title}}
-</h1>
+
+
+<div class="search">
+  <input type="text" [(ngModel)]="movieName" (keydown.enter)="find(movieName)">
+  <button (click)="find(movieName)">Find Movie</button>
+</div>
+
+
+<div *ngIf="movies.length > 0">
+
+  <hr>
+
+  <ul>
+    <li *ngFor="let movie of movies">
+      <div class="panel">
+        <img [src]="movie.Poster" [alt]="movie.Title + ' Poster'">
+      </div>
+      <div class="txtcont">
+        <a [href]="'https://www.imdb.com/title/'+movie.imdbID">
+          {{movie.Title}}
+        </a>
+      </div>
+    </li>
+  </ul>
+
+</div>
